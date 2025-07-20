@@ -1,0 +1,88 @@
+/* Main CSS for Bullionrise Consult Clone */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #222;
+}
+header, footer {
+    background: #0a2239;
+    color: #fff;
+    padding: 24px 0;
+    text-align: center;
+}
+nav {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 12px 0;
+}
+nav a {
+    color: #0a2239;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: 500;
+}
+nav a:hover {
+    color: #e8b923;
+}
+section {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 32px 24px;
+}
+h1, h2, h3 {
+    color: #0a2239;
+}
+.button {
+    background: #e8b923;
+    color: #0a2239;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 12px;
+    display: inline-block;
+}
+.button:hover {
+    background: #cfae1d;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+}
+.grid .card {
+    flex: 1 1 300px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 24px;
+    margin: 8px 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+img.responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+footer .socials a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+@media (max-width: 800px) {
+    section, .grid {
+        flex-direction: column;
+        padding: 16px 8px;
+    }
+    .grid .card {
+        margin: 0 0 16px 0;
+    }
+}
